@@ -1,0 +1,993 @@
+body
+{
+    font-family: 'helvetica', 'sans-serif';
+    margin:0;
+    background-color:rgb(26, 26, 26);
+}
+
+/* start of global style rules */
+h1, h2,h3,h4,h5
+{
+ line-height:1.5;
+ font-weight:300;
+ margin:0.5em 0;
+}
+
+h1
+{
+    font-size:2.5em;
+}
+
+h2
+{
+    font-size:2em;
+}
+
+h3
+{
+    font-size:1.6em;
+}
+
+h4
+{
+    font-size:1.4em;
+}
+
+a
+{
+    text-decoration:none;
+}
+
+
+p,label,strong
+{
+    line-height:2;
+    font-size:1em;
+    font-weight:300;
+}
+
+.flex
+{
+    display:flex;
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content:space-between;
+}
+/* end of global styling */
+
+/* start of header styles */
+header
+{
+    background-color:black;
+    padding:20px 0;
+    position:relative;
+    border-bottom:1px solid yellow;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li
+{
+    display:inline-block;
+    font-size:1.2em;
+    margin: 0 18px;
+}
+
+nav ul li a
+{
+    color:white;
+    font-weight:600;
+}
+
+nav ul li a:hover
+{
+    color:yellow;
+}
+
+.wallpaper-header 
+{
+  background-image: url('../img/esports1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  height:820px;
+}
+
+.header-text
+{
+    max-width: 1500px;
+    margin:-30px auto 0;
+    position:absolute;
+    top:40%;
+    left:0;
+    right:0;
+    padding: 0 20px;
+}
+
+.header-text h1
+{
+ color:white;
+ font-size: 3.5em;
+ font-weight:bold;
+ margin:1em 0;
+}
+
+.header-text span
+{
+    color:yellow;
+    text-decoration:underline;
+}
+
+
+.header-text h5
+{
+color: white;
+font-size: 0.85em;
+font-weight: 300;
+max-width: 500px;
+line-height: 2;
+margin-bottom: 2.5em;
+}
+
+/* start of the information */
+.Esports-info
+{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color:white;
+
+}
+
+.Esports-info .flex
+{
+    flex-basis: 24%;
+    padding:1%;
+    padding-top:10%;
+    padding-bottom:10%;
+    position:relative;
+    height:fit-content;
+    font-size:15px;
+    max-width:1700px;
+}
+
+.box-pic1
+{
+    background-image: url('../img/val.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    padding: 3%;
+}
+
+.box-pic2
+{
+    background-image: url('../img/titan.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    padding: 2%;
+}
+
+.box-pic3
+{
+    background-image: url('../img/skit1.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    padding: 2%;
+}
+
+.box-pic4
+{
+    background-image: url('../img/dvt.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    padding: 2%;
+}
+
+.Esports-info .Contents 
+{
+    position: absolute;
+    z-index:2;
+    bottom: 20px;
+    left:0;
+    color:white;
+    padding-right:10px;
+}
+
+.Esports-info .flex .contents a:visited  
+{
+  color:yellow;
+}
+
+.Esports-info .flex .contents a:hover
+{
+    text-decoration: underline;
+}
+
+.Esports-info .flex .contents a:active
+{
+  color:yellow;
+}
+
+
+.stats
+{
+    background-image: url('../img/stats.jpg');
+    border-top:1px solid yellow;
+    border-bottom:1px solid yellow;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    padding:70px 0 120px;
+}
+
+.stats img
+{
+    max-width: 100%;
+    height:auto;
+    min-width:100%;
+}
+
+.stats .flex
+{
+    max-width:1500px;
+    font-size:15px;
+
+}
+
+.stats img:hover 
+{
+    box-shadow: 0 0 2px 3px rgba(0, 140, 186, 0.5);
+}
+
+.stats h1 
+{
+text-align: center;
+color:#00e8ec;
+font-weight: bold;
+text-decoration: underline;
+}
+
+.stats .box
+{
+    position: relative;
+    flex-basis: 45%;
+    background-color: #fff;
+}
+
+.stats .box .box-lower-section
+{
+    padding: 20px;
+}
+
+.stats .box .box-lower-section p 
+{
+    color: #999;
+}
+
+footer
+{
+    background-color:#252525;
+    padding: 25px;
+    font-size: 1.5em;
+}
+
+footer ul
+{
+    list-style-type: none;
+    margin:0;
+}
+
+footer ul li 
+{
+    display:inline-block;
+    margin: 0 12px;
+}
+
+footer ul li a
+{
+    color:#ddd;
+    font-size:1em;
+    font-weight: bold;
+}
+
+footer ul li a:hover
+{
+    color:yellow;
+}
+
+.modal
+{
+    position: sticky;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active 
+{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header 
+{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title 
+{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button 
+{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.modal-body 
+{
+    padding: 10px 15px;
+}
+
+
+/*comp html*/
+.wallpaper-header2
+{
+  background-image: url('../img/comp.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  height:820px;
+}
+
+.comp-info
+{
+    padding:125px 0 105px;
+}
+
+.comp-info .flex
+{
+    position:relative;
+}
+
+.comp-info .box
+{
+  background-color: #252525;
+  border:3px solid yellow;
+  padding:70px 0 0 40px;
+  flex-basis: 45%;
+  position:relative;
+}
+
+.comp-info .box .set-up
+{
+    float:left;
+    width:30%;
+}
+
+.comp-info .box .set-up img
+{
+    width:100%;
+    margin-left:100%;
+}
+
+.comp-info .box .contents
+{
+    float:left;
+    margin-left:10%;
+    margin-right:10%;
+    width:80%;
+    color: silver;
+}
+
+.comp-info .box .contents h3 
+{
+    color:orange;
+    margin-top: 0;
+}
+
+.teams
+{
+    padding:75px 0 0 0 ;    
+    border-bottom:3px solid yellow;
+}
+
+.teams h1
+{
+    text-align:center;
+    margin-bottom:1.65em;
+    color:yellow;
+}
+
+.teams h4{
+    color:orange;
+}
+
+.teams .box
+{
+    flex-basis: 23%;
+    position:relative;
+    text-align:center;
+}
+
+.teams .esports-team
+{
+    margin-bottom:0.75em;
+    width:15em;
+    height:15em;
+}
+
+.teams .esports-team img
+{
+    width: 100%;
+    height:70%;
+}
+
+.teams .box p
+{
+    color:#999;
+}
+/* end of the comp html */
+
+
+/* experience html */
+.wallpaper-header3
+{
+  background-image: url('../img/experience.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  height:560px;
+  border-bottom:3px solid yellow;
+}
+
+.gaming-experience
+{
+    margin-top:75px;
+    margin-bottom: 75px;
+}
+
+.gaming-experience h4 
+{
+    font-weight:bold;
+    color:orange;
+    text-align:center;
+}
+
+.gaming-experience .game-box
+{
+    flex-basis:25%;
+    position:relative;
+    height:400px;
+    background-color: black;
+    border:1px solid yellow;
+
+}
+
+.gaming-experience .game-box .EXP
+{
+    position:absolute;
+    bottom:20px;
+    left:0;
+    color:white;
+    padding:0 25px 0 25px;
+}
+/* end of experience html*/
+
+/*start of lessons.html  */
+.wallpaper-header4
+{
+  background-image: url('../img/lessons.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  height:820px;
+}
+
+.lesson1
+{
+    /*width: 100%;*/
+    height: 100vh;
+    padding-left:5%;
+    padding-right:5%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background:black;   
+}
+
+.lesson1 .lesson-img
+{ 
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-30%,-50%);
+    transform: translate(-30%,-50%);
+    z-index: 2;
+}
+
+.lesson-img img
+{
+    -webkit-animation: image-slide 4s cubic-bezier(0.5,.5,0,1);
+    animation: image-slide 4s cubic-bezier(0.5,0.5,0,1);
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    height: 200px;
+}
+
+.lesson-text
+{
+    position: absolute;
+    width:20%;
+    top:50%;
+    left:35%;
+    -webkit-transform: translate(-30%,-50%);
+    transform: translate(-30%,-50%);
+    z-index: 1;
+    margin-left: -100px;
+    color:white;
+}
+
+.lesson-text span 
+{
+    color:orange;
+}
+
+.lesson-text h1 
+{
+    color:yellow;
+}
+
+.lesson
+{
+    padding:125px 0 105px;
+}
+
+.lesson .flex
+{
+    position:relative;
+}
+
+.lesson .box
+{
+  background-color: #252525;
+  border:3px solid yellow;
+  padding:70px 0 0 40px;
+  flex-basis: 45%;
+  position:relative;
+}
+
+.lesson .box .contents
+{
+    float:left;
+    margin-left:25%;
+    width:60%;
+    color: silver;
+}
+
+.lesson .box .contents h3 
+{
+    color:orange;
+    margin-top: 0;
+}
+
+.modal2
+{
+    position: sticky;
+    top: 25%;
+    left: 25%;
+    transform: translate(0%, 0%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    width: 1000px;
+    max-width: 100%;
+}
+
+.modal2.active 
+{
+    transform: translate(0%, 0%) scale(1);
+    color:black;
+    z-index:10;
+}
+
+.modal-header2
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header2 .title 
+{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header2 .close-button 
+{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.modal-body2 
+{
+    padding: 10px 15px;
+}
+
+.hide
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    -webkit-animation: text-slide 4s cubic-bezier(.5,.5,0,1);
+    animation: text-slide 4s cubic-bezier(.5,.5,0,1);
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.reveal
+{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+  
+.reveal.active
+{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@keyframes image-slide
+{
+    0% {  transform: translateX(-250px) scale(0); }
+    60% { transform: translateX(-250px) scale(1); }
+    90% { transform: translateX(150px) scale(1); }
+    100% { transform: translateX(150px) scale(1); }  
+}
+  
+/* Slides the text by shrinking the width of the object from full (100%) to nada (0%) */
+@keyframes text-slide 
+{
+    0% { width: 100%; }
+    60% { width: 100%; }
+    75%{ width: 0; }
+    100% { width: 0; }
+}   
+
+/* end of lessons.html */
+.navbar 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger 
+{
+    display: none;
+    z-index: 10;
+}
+
+.bar 
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+    background-color:yellow;
+}
+
+.nav-menu 
+{
+    display: flex;
+    z-index:5;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item 
+{
+    margin-left: 5rem;
+}
+
+.nav-link
+{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+}
+
+.nav-link:hover{
+    color: yellow;
+}
+
+/* ipad/tablet size*/
+@media only screen and (max-width: 720px) 
+{
+    .nav-menu 
+    {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        border-bottom:1px solid yellow;
+    }
+
+    .nav-menu.active 
+    {
+        left: 0;
+    }
+
+    .nav-item 
+    {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger
+    {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) 
+    {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) 
+    {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) 
+    {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* index.html */
+    .wallpaper-header
+    {
+        height:720px;
+    }
+
+    .modal
+    {
+        top:45%;
+        left:45%; 
+        width: 400px;
+        max-width:70%;
+    } 
+
+    .modal2
+    {
+        top:45%;
+        left:45%; 
+        width: 400px;
+        max-width:70%;
+    }
+
+    .Esports-info .flex
+    {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .box-pic1
+    {
+        padding: 10%;
+    }
+
+    .box-pic2
+    {
+        padding: 10%;
+    }
+
+    .box-pic3
+    {
+        padding: 10%;
+    }
+
+    .box-pic4
+    {
+        padding: 10%;
+    }
+
+    .Esports-info .flex
+    {
+        font-size: 125%;
+    }
+
+    .stats
+    {
+        padding-top:10%;
+        width:100%;
+    }
+
+    .stats .flex
+    {
+        display:flow-root;
+        font-size:110%; 
+    }
+
+    .stats img
+    {
+        min-width: 100%;
+    }
+
+    footer
+    {
+        display:none;
+    }
+
+    /* comp.html */
+    .wallpaper-header2
+    {
+        height:720px;
+    }
+
+    .comp-info .flex
+    {
+        flex-direction:column;
+        height:max-content;
+        font-size:120%;
+    }
+
+    .comp-info .box
+    {
+        border: 0px;
+    }
+
+    .teams .flex
+    {
+        flex-direction:column;
+        font-size:110%;
+    }
+
+    .teams .flex .box .esports-team
+    {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        height:auto;
+    }
+    
+    .teams .flex .box
+    {
+        padding: 5%;
+    }
+
+    /* experience.html */
+    .wallpaper-header3
+    {
+        height:720px;
+    }
+
+    .gaming-experience .flex
+    {
+        flex-direction:column;
+        height:200vh;
+        font-size:120%;
+    }
+
+    .comp-info .box .contents
+    {
+        font-size:105%;
+    }
+
+    /* others.html */
+    .wallpaper-header4
+    {
+        height:720px;
+    }
+
+    .lesson1 .lesson-img
+    {
+        left:55%;
+        -webkit-transform: translate(-60%,-40%);
+        transform: translate(-60%,-40%);
+    }
+
+    .lesson-text
+    {
+        width:30%;
+    }
+    
+    .lesson .flex
+    {
+        flex-direction: column;
+        font-size:120%;
+    }
+
+    .lesson .box
+    {
+        border:0px;
+    }
+
+    @keyframes image-slide
+    {
+        0% {  transform: translateX(-50px) scale(0); }
+        60% { transform: translateX(-50px) scale(1); }
+        90% { transform: translateX(150px) scale(1); }
+        100% { transform: translateX(150px) scale(1); }  
+    }
+} 
+
+@media only screen and (max-width: 540px) 
+{
+    .modal.active
+    {
+        transform:translate(-20%,-50%) scale(1);
+    }
+
+    .Esports-info .flex
+    {
+        font-size: 125%;
+    }
+
+    .stats .flex
+    {
+       font-size:110%; 
+    }
+
+    .lesson1 .lesson-img
+    {
+        transform: translate(-70%,-50%);
+    }
+
+    @keyframes image-slide
+    {
+        0% {  transform: translateX(0px) scale(0); }
+        60% { transform: translateX(0px) scale(1); }
+        90% { transform: translateX(150px) scale(1); }
+        100% { transform: translateX(150px) scale(1); }  
+    }
+}
