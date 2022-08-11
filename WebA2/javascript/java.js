@@ -37,44 +37,6 @@ function closeModal(modal) {
   overlay.classList.remove('active')
 }
 
-
-var overlay2;
-const openModal2Buttons = document.querySelectorAll('[data-modal2-target]')
-const closeModal2Buttons = document.querySelectorAll('[data-close-button]')
-
-openModal2Buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal2 = document.querySelector(button.dataset.modal2Target)
-    openModal2(modal2)
-  })
-})
-
-if (overlay2 = document.querySelector('.overlay2')) {
-  overlay2.addEventListener('click', () => {
-    const modal2s = document.querySelectorAll('.modal2.active');
-    modal2s.forEach(modal2 => { closeModal(modal2) });
-  });
-}
-
-closeModal2Buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal2 = button.closest('.modal2')
-    closeModal2(modal2)
-  })
-})
-
-function openModal2(modal2) {
-  if (modal2 == null) return
-  modal2.classList.add('active')
-  overlay2.classList.add('active')
-}
-
-function closeModal2(modal2) {
-  if (modal2 == null) return
-  modal2.classList.remove('active')
-  overlay2.classList.remove('active')
-}
-
 //nav bar 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
